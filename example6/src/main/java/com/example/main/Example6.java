@@ -13,5 +13,6 @@ public class Example6 {
         // will print Honda bcoz of PostConstruct
         System.out.println("Component Vehicle name from Spring Context is: " + veh.getName());
         veh.printHello();
+        context.close(); // will call the methods of all the beans that have @Predestroy Annotation
     }
 }
